@@ -3,146 +3,658 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>papaSoft Enterprise</title>
+
+    <title>papaSoft Enterprise | Software & Technology</title>
+
+    <meta name="description"
+          content="papaSoft Enterprise — independent software and technology development, Android applications, hardware solutions and technical consulting.">
+
+    <meta name="author" content="YOUR LEGAL NAME">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for modern icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
     </style>
 </head>
 
-<body class="bg-gray-700 text-gray-900 min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
+<body class="bg-gray-700 text-gray-900 min-h-screen flex flex-col selection:bg-blue-500 selection:text-white">
 
-    <!-- Header / Navbar -->
-    <header class="w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+    <header class="w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700/80 flex items-center justify-center overflow-hidden shadow-inner">
-                    <img src="papasoft Logo.jpg" alt="papaSoft Logo" class="w-full h-full object-cover">
+
+            <a href="#top" class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700/80
+                            flex items-center justify-center overflow-hidden shadow-inner">
+
+                    <img src="papasoft Logo.jpg"
+                         alt="papaSoft Logo"
+                         class="w-full h-full object-cover">
                 </div>
+
                 <div>
-                    <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight text-white">papaSoft <span class="text-blue-400 font-light">Enterprise</span></h1>
-                    <p class="text-xs text-slate-400">software for the future</p>
+                    <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight text-white">
+                        papaSoft
+                        <span class="text-blue-400 font-light">Enterprise</span>
+                    </h1>
+
+                    <p class="text-xs text-slate-400">
+                        software for the future
+                    </p>
                 </div>
-            </div>
-            <div class="hidden sm:flex items-center gap-2 text-xs text-slate-400 bg-slate-800/60 px-3 py-1.5 rounded-full border border-slate-700/60">
+            </a>
+
+            <div class="hidden sm:flex items-center gap-2 text-xs text-slate-400
+                        bg-slate-800/60 px-3 py-1.5 rounded-full border border-slate-700/60">
+
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>Systems Active</span>
             </div>
+
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="max-w-5xl mx-auto px-6 py-12 sm:py-16 flex-grow flex flex-col justify-center w-full">
-        
-        <!-- Hero Section with uploaded logo showcase -->
-        <div class="text-center mb-16">
-            <div class="inline-block mb-6 p-2 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl">
-                <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden mx-auto shadow-inner border border-slate-700/50">
-                    <img src="papasoft Logo.jpg" alt="papaSoft Logo Featured" class="w-full h-full object-cover">
-                </div>
-            </div>
-            <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white">papaSoft <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Enterprise</span></h2>
-            <p class="text-slate-400 mt-3 text-sm sm:text-base max-w-xl mx-auto font-medium">software for the future — delivering elite software development, hardware solutions, and technical expertise.</p>
-        </div>
 
-        <!-- Services Section Grid -->
-        <div class="mb-8">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-6 text-center">Core Capabilities & Services</h3>
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+    <main id="top" class="max-w-5xl mx-auto px-6 py-12 sm:py-16 w-full flex-grow">
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+        <section class="text-center mb-20">
+
+            <div class="inline-block mb-6 p-2 rounded-3xl bg-slate-900
+                        border border-slate-800 shadow-2xl">
+
+                <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden
+                            mx-auto shadow-inner border border-slate-700/50">
+
+                    <img src="papasoft Logo.jpg"
+                         alt="papaSoft Logo"
+                         class="w-full h-full object-cover">
+                </div>
+
+            </div>
+
+            <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white">
+
+                papaSoft
+                <span class="text-transparent bg-clip-text
+                             bg-gradient-to-r from-blue-400 to-indigo-400">
+                    Enterprise
+                </span>
+
+            </h2>
+
+            <p class="text-slate-400 mt-4 text-sm sm:text-base
+                      max-w-2xl mx-auto font-medium leading-relaxed">
+
+                Independent software and technology development focused on
+                Android applications, software solutions, hardware technology
+                and practical technical expertise.
+
+            </p>
+
+            <div class="mt-7 flex flex-wrap justify-center gap-3">
+
+                <a href="#applications"
+                   class="px-5 py-2.5 rounded-xl bg-blue-500 hover:bg-blue-400
+                          text-white text-sm font-semibold transition">
+
+                    <i class="fa-brands fa-android mr-2"></i>
+                    Applications
+
+                </a>
+
+                <a href="#about"
+                   class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700
+                          border border-slate-700 text-slate-200 text-sm font-semibold transition">
+
+                    About papaSoft
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+        <section id="about" class="mb-20 scroll-mt-24">
+
+            <div class="bg-slate-900/60 border border-slate-800/80
+                        rounded-2xl p-7 sm:p-9 shadow-lg">
+
+                <div class="flex items-center gap-4 mb-5">
+
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10
+                                text-blue-400 flex items-center justify-center">
+
+                        <i class="fa-solid fa-building text-xl"></i>
+
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-white">
+                            About papaSoft
+                        </h3>
+
+                        <p class="text-xs uppercase tracking-widest
+                                  text-slate-500 mt-1">
+                            Software & Technology
+                        </p>
+                    </div>
+
+                </div>
+
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+
+                    <strong class="text-slate-200">papaSoft</strong> is an
+                    independent software and technology brand operated by
+                    <strong class="text-slate-200">GYORGY KESZTE</strong>,
+                    a Hungarian sole proprietor.
+
+                    The focus is on developing practical software solutions,
+                    Android applications and technology projects, together with
+                    selected hardware-related and technical services.
+
+                </p>
+
+                <p class="text-slate-400 text-sm sm:text-base leading-relaxed mt-4">
+
+                    The papaSoft brand is used for software development,
+                    applications and technology projects published and
+                    maintained by the business.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICES
+        ====================================================== -->
+        <section id="services" class="mb-20 scroll-mt-24">
+
+            <h3 class="text-xs font-bold uppercase tracking-widest
+                       text-slate-400 mb-6 text-center">
+
+                Core Capabilities & Services
+
+            </h3>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                
-                <!-- Service 1 -->
-                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 flex flex-col justify-between group shadow-lg">
+
+
+                <!-- Android -->
+                <div class="bg-slate-900/60 border border-slate-800/80
+                            rounded-2xl p-6 hover:border-blue-500/50
+                            hover:bg-slate-900 transition-all duration-300
+                            flex flex-col justify-between group shadow-lg">
+
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10
+                                    text-blue-400 flex items-center justify-center
+                                    mb-4 group-hover:bg-blue-500
+                                    group-hover:text-white transition-all">
+
                             <i class="fa-brands fa-android text-xl"></i>
+
                         </div>
-                        <h4 class="text-lg font-bold text-white capitalize">Android App Development</h4>
-                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Designing, building, and publishing high-performance mobile applications optimized for Google Play.</p>
+
+                        <h4 class="text-lg font-bold text-white">
+                            Android App Development
+                        </h4>
+
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+
+                            Design, development and publishing of Android
+                            applications and utility software.
+
+                        </p>
+
                     </div>
-                    <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-blue-400">
+
+                    <div class="mt-6 pt-4 border-t border-slate-800/60
+                                flex items-center text-xs font-semibold text-blue-400">
+
                         <span>Google Play Ready</span>
-                        <i class="fa-solid fa-arrow-right ml-auto group-hover:translate-x-1 transition-transform"></i>
+
+                        <i class="fa-solid fa-arrow-right ml-auto
+                                  group-hover:translate-x-1 transition-transform"></i>
+
                     </div>
+
                 </div>
 
-                <!-- Service 2 -->
-                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 hover:border-indigo-500/50 hover:bg-slate-900 transition-all duration-300 flex flex-col justify-between group shadow-lg">
+
+                <!-- Software -->
+                <div class="bg-slate-900/60 border border-slate-800/80
+                            rounded-2xl p-6 hover:border-indigo-500/50
+                            hover:bg-slate-900 transition-all duration-300
+                            flex flex-col justify-between group shadow-lg">
+
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-4 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10
+                                    text-indigo-400 flex items-center justify-center
+                                    mb-4 group-hover:bg-indigo-500
+                                    group-hover:text-white transition-all">
+
+                            <i class="fa-solid fa-code text-xl"></i>
+
+                        </div>
+
+                        <h4 class="text-lg font-bold text-white">
+                            Software Development
+                        </h4>
+
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+
+                            Development of practical software tools,
+                            utilities and custom software solutions.
+
+                        </p>
+
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-800/60
+                                flex items-center text-xs font-semibold text-indigo-400">
+
+                        <span>Custom Solutions</span>
+
+                        <i class="fa-solid fa-arrow-right ml-auto
+                                  group-hover:translate-x-1 transition-transform"></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Commerce -->
+                <div class="bg-slate-900/60 border border-slate-800/80
+                            rounded-2xl p-6 hover:border-purple-500/50
+                            hover:bg-slate-900 transition-all duration-300
+                            flex flex-col justify-between group shadow-lg">
+
+                    <div>
+
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10
+                                    text-purple-400 flex items-center justify-center
+                                    mb-4 group-hover:bg-purple-500
+                                    group-hover:text-white transition-all">
+
                             <i class="fa-solid fa-shop text-xl"></i>
+
                         </div>
-                        <h4 class="text-lg font-bold text-white capitalize">Hardware and Software Commerce</h4>
-                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Procurement, licensing, and trade of reliable enterprise-grade hardware components and software solutions.</p>
+
+                        <h4 class="text-lg font-bold text-white">
+                            Hardware & Software Commerce
+                        </h4>
+
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+
+                            Procurement, licensing and trade of selected
+                            hardware components and software solutions.
+
+                        </p>
+
                     </div>
-                    <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-indigo-400">
-                        <span>Commercial Grade</span>
-                        <i class="fa-solid fa-arrow-right ml-auto group-hover:translate-x-1 transition-transform"></i>
+
+                    <div class="mt-6 pt-4 border-t border-slate-800/60
+                                flex items-center text-xs font-semibold text-purple-400">
+
+                        <span>Technology Solutions</span>
+
+                        <i class="fa-solid fa-arrow-right ml-auto
+                                  group-hover:translate-x-1 transition-transform"></i>
+
                     </div>
+
                 </div>
 
-                <!-- Service 3 -->
-                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 hover:border-purple-500/50 hover:bg-slate-900 transition-all duration-300 flex flex-col justify-between group shadow-lg">
+
+                <!-- Consulting -->
+                <div class="bg-slate-900/60 border border-slate-800/80
+                            rounded-2xl p-6 hover:border-emerald-500/50
+                            hover:bg-slate-900 transition-all duration-300
+                            flex flex-col justify-between group shadow-lg">
+
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10
+                                    text-emerald-400 flex items-center justify-center
+                                    mb-4 group-hover:bg-emerald-500
+                                    group-hover:text-white transition-all">
+
                             <i class="fa-solid fa-comments text-xl"></i>
+
                         </div>
-                        <h4 class="text-lg font-bold text-white capitalize">Hardware and Software Consulting</h4>
-                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Expert advisory and architecture consulting to optimize your tech stack and infrastructure.</p>
+
+                        <h4 class="text-lg font-bold text-white">
+                            Technical Consulting
+                        </h4>
+
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+
+                            Technical advice and practical assistance with
+                            software, hardware and technology projects.
+
+                        </p>
+
                     </div>
-                    <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-purple-400">
-                        <span>Strategic Advisory</span>
-                        <i class="fa-solid fa-arrow-right ml-auto group-hover:translate-x-1 transition-transform"></i>
+
+                    <div class="mt-6 pt-4 border-t border-slate-800/60
+                                flex items-center text-xs font-semibold text-emerald-400">
+
+                        <span>Technical Expertise</span>
+
+                        <i class="fa-solid fa-arrow-right ml-auto
+                                  group-hover:translate-x-1 transition-transform"></i>
+
                     </div>
+
                 </div>
 
-                <!-- Service 4 -->
-                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 hover:border-emerald-500/50 hover:bg-slate-900 transition-all duration-300 flex flex-col justify-between group shadow-lg">
-                    <div>
-                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                            <i class="fa-solid fa-microchip text-xl"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-white capitalize">Special Hardware Development</h4>
-                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Custom engineering and prototyping of specialized hardware systems built for unique operational requirements.</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-emerald-400">
-                        <span>Custom Engineered</span>
-                        <i class="fa-solid fa-arrow-right ml-auto group-hover:translate-x-1 transition-transform"></i>
-                    </div>
-                </div>
 
-                <!-- Service 5 -->
-                <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 hover:border-rose-500/50 hover:bg-slate-900 transition-all duration-300 flex flex-col justify-between group shadow-lg md:col-span-2 lg:col-span-2">
-                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center flex-shrink-0 group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
+                <!-- Hardware -->
+                <div class="bg-slate-900/60 border border-slate-800/80
+                            rounded-2xl p-6 hover:border-rose-500/50
+                            hover:bg-slate-900 transition-all duration-300
+                            flex flex-col justify-between group shadow-lg
+                            md:col-span-2 lg:col-span-2">
+
+                    <div class="flex flex-col sm:flex-row
+                                items-start sm:items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-xl bg-rose-500/10
+                                    text-rose-400 flex items-center justify-center
+                                    flex-shrink-0 group-hover:bg-rose-500
+                                    group-hover:text-white transition-all">
+
                             <i class="fa-solid fa-screwdriver-wrench text-xl"></i>
+
                         </div>
+
                         <div>
-                            <h4 class="text-lg font-bold text-white capitalize">Hardware Repair</h4>
-                            <p class="text-slate-400 text-sm mt-1 leading-relaxed">Precision diagnostics and repair services to restore critical hardware equipment to peak operating efficiency.</p>
+
+                            <h4 class="text-lg font-bold text-white">
+                                Hardware Repair & Development
+                            </h4>
+
+                            <p class="text-slate-400 text-sm mt-1 leading-relaxed">
+
+                                Hardware diagnostics, repair, prototyping and
+                                development of specialized technology solutions.
+
+                            </p>
+
                         </div>
+
                     </div>
-                    <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-rose-400">
-                        <span>Professional Diagnostics & Restoration</span>
-                        <i class="fa-solid fa-arrow-right ml-auto group-hover:translate-x-1 transition-transform"></i>
+
+                    <div class="mt-6 pt-4 border-t border-slate-800/60
+                                flex items-center text-xs font-semibold text-rose-400">
+
+                        <span>Diagnostics & Engineering</span>
+
+                        <i class="fa-solid fa-arrow-right ml-auto
+                                  group-hover:translate-x-1 transition-transform"></i>
+
                     </div>
+
                 </div>
 
             </div>
-        </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             APPLICATIONS
+        ====================================================== -->
+        <section id="applications" class="mb-20 scroll-mt-24">
+
+            <div class="flex items-center justify-between mb-6">
+
+                <div>
+
+                    <h3 class="text-xs font-bold uppercase tracking-widest
+                               text-slate-400">
+
+                        Applications
+
+                    </h3>
+
+                    <p class="text-slate-300 mt-2 text-sm">
+                        Software developed under the papaSoft brand.
+                    </p>
+
+                </div>
+
+                <i class="fa-brands fa-google-play text-2xl text-slate-500"></i>
+
+            </div>
+
+
+            <!-- MockNavi -->
+            <div class="bg-slate-900/60 border border-slate-800/80
+                        rounded-2xl p-6 shadow-lg">
+
+                <div class="flex flex-col sm:flex-row
+                            items-start sm:items-center gap-5">
+
+                    <div class="w-14 h-14 rounded-2xl bg-blue-500/10
+                                text-blue-400 flex items-center justify-center
+                                flex-shrink-0">
+
+                        <i class="fa-solid fa-location-crosshairs text-2xl"></i>
+
+                    </div>
+
+                    <div class="flex-grow">
+
+                        <h4 class="text-lg font-bold text-white">
+                            MockNavi
+                        </h4>
+
+                        <p class="text-slate-400 text-sm mt-1 leading-relaxed">
+
+                            Android utility for GPS mock-location simulation,
+                            designed for developers and testers working with
+                            navigation and map-based applications.
+
+                        </p>
+
+                    </div>
+
+                    <a href="https://doki101.github.io/privacy/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="whitespace-nowrap px-4 py-2 rounded-lg
+                              bg-slate-800 hover:bg-slate-700
+                              border border-slate-700 text-slate-300
+                              text-xs font-semibold transition">
+
+                        <i class="fa-solid fa-shield-halved mr-2"></i>
+                        Privacy Policy
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+        <section id="contact" class="mb-12 scroll-mt-24">
+
+            <div class="bg-slate-900/60 border border-slate-800/80
+                        rounded-2xl p-7 sm:p-9 shadow-lg">
+
+                <div class="text-center">
+
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10
+                                text-blue-400 flex items-center justify-center
+                                mx-auto mb-4">
+
+                        <i class="fa-solid fa-envelope text-xl"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white">
+                        Contact
+                    </h3>
+
+                    <p class="text-slate-400 text-sm mt-2 max-w-lg mx-auto">
+
+                        For software, technology or business enquiries,
+                        please use the contact information below.
+
+                    </p>
+
+
+<form action="https://formspree.io/f/mgaoewop" method="POST" class="max-w-md mx-auto space-y-4 p-6 bg-white rounded-xl shadow-md">
+    <h3 class="text-lg font-bold text-gray-800">Send a message for us</h3>
+    
+    <div>
+        <label class="block text-sm font-medium text-gray-700">Your e-mail address:</label>
+        <input type="email" name="email" required class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 outline-none">
+    </div>
+    
+    <div>
+        <label class="block text-sm font-medium text-gray-700">Message:</label>
+        <textarea name="message" rows="4" required class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+    </div>
+    
+    <button type="submit" class="w-full py-2 px-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-md transition">
+        Send
+    </button>
+</form>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
 
     </main>
 
-    <!-- Footer -->
-    <footer class="w-full bg-slate-900 border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p>&copy; 2026 papaSoft Enterprise. All rights reserved.</p>
-            <p class="text-slate-400 font-medium">software for the future</p>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+    <footer class="w-full bg-slate-900 border-t border-slate-800 py-7
+                   text-center text-xs text-slate-500">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="flex flex-col sm:flex-row
+                        items-center justify-between gap-4">
+
+                <div class="text-left">
+
+                    <p class="text-slate-300 font-medium">
+                        © 2026 papaSoft Enterprise
+                    </p>
+
+                    <!-- =================================================
+                         REPLACE WITH OFFICIAL BUSINESS NAME
+                    ================================================== -->
+
+                    <p class="mt-1">
+                        Operated by GYORGY KESZTE, sole proprietor
+                    </p>
+
+                </div>
+
+
+                <div class="flex flex-wrap justify-center gap-4">
+
+                    <a href="#about"
+                       class="hover:text-slate-300 transition">
+                        About
+                    </a>
+
+                    <a href="#services"
+                       class="hover:text-slate-300 transition">
+                        Services
+                    </a>
+
+                    <a href="#applications"
+                       class="hover:text-slate-300 transition">
+                        Applications
+                    </a>
+
+                    <a href="#contact"
+                       class="hover:text-slate-300 transition">
+                        Contact
+                    </a>
+
+                    <!--
+                        IMPORTANT:
+                        This is currently the MockNavi Privacy Policy,
+                        not a general papaSoft company privacy policy.
+                    -->
+
+                    <a href="https://doki101.github.io/privacy/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="hover:text-slate-300 transition">
+
+                        MockNavi Privacy
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="mt-5 pt-5 border-t border-slate-800/70">
+
+                <p class="text-slate-600">
+                    papaSoft — software for the future
+                </p>
+
+            </div>
+
         </div>
+
     </footer>
 
 </body>
