@@ -471,18 +471,23 @@
                 <div class="flex flex-col sm:flex-row
                             items-start sm:items-center gap-5">
 
-                    <div class="w-14 h-14 rounded-2xl bg-blue-500/10
-                                text-blue-400 flex items-center justify-center
-                                flex-shrink-0">
+                    <a href="mocknavi/help.html"
+                       aria-label="MockNavi help"
+                       class="block w-14 h-14 rounded-2xl overflow-hidden
+                              flex-shrink-0">
 
-                        <i class="fa-solid fa-location-crosshairs text-2xl"></i>
+                        <img src="mocknavi/icon.png"
+                             alt="MockNavi logo"
+                             width="56" height="56"
+                             class="w-full h-full object-cover">
 
-                    </div>
+                    </a>
 
                     <div class="flex-grow">
 
                         <h4 class="text-lg font-bold text-white">
-                            MockNavi
+                            <a href="mocknavi/help.html"
+                               class="hover:text-blue-300 transition">MockNavi</a>
                         </h4>
 
                         <p class="text-slate-400 text-sm mt-1 leading-relaxed">
@@ -494,6 +499,17 @@
                         </p>
 
                     </div>
+
+                    <div class="flex flex-wrap gap-2 flex-shrink-0">
+                    <a href="mocknavi/help.html"
+                       class="whitespace-nowrap px-4 py-2 rounded-lg
+                              bg-blue-600 hover:bg-blue-500
+                              text-white text-xs font-semibold transition">
+
+                        <i class="fa-solid fa-circle-question mr-2"></i>
+                        Help
+
+                    </a>
 
                     <a href="https://doki101.github.io/privacy/"
                        target="_blank"
@@ -507,6 +523,7 @@
                         Privacy Policy
 
                     </a>
+                    </div>
 
                 </div>
 
