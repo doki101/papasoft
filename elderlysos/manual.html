@@ -1,1 +1,35 @@
-ElderlySOS Manual
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elderly SOS – Magyar / English</title>
+<style>
+:root{--bg:#f5f7fa;--ink:#1b2430;--muted:#4d5b6c;--sos:#c8102e;--sos-soft:#fdecee;--blue:#1f3a5f;--btn-text:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#10151c;--ink:#eef2f7;--muted:#a9b6c6;--sos:#ff5a6e;--sos-soft:#2b1a1f;--blue:#9cc0f0;--btn-text:#10151c}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;min-height:100dvh;background:var(--bg);color:var(--ink);font:18px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:grid;place-items:center;padding:1.5rem 1.1rem}
+main{width:100%;max-width:26rem;text-align:center}
+.presses{display:flex;gap:.6rem;justify-content:center;margin-bottom:1.2rem}
+.presses span{width:2.6rem;height:2.6rem;border-radius:50%;background:var(--sos);box-shadow:0 0 0 .35rem var(--sos-soft)}
+h1{font-size:2.2rem;line-height:1.1;margin:0 0 .4rem;color:var(--blue)}
+p{margin:0 0 1.8rem;color:var(--muted)}
+.choices{display:grid;gap:1rem}
+.choices a{display:block;padding:1.1rem 1rem;border-radius:12px;background:var(--sos);color:var(--btn-text);font-size:1.25rem;font-weight:700;text-decoration:none}
+.choices a small{display:block;font-size:.95rem;font-weight:400;opacity:.9;margin-top:.15rem}
+.choices a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+<div class="presses" aria-hidden="true"><span></span><span></span><span></span></div>
+<h1>Elderly SOS</h1>
+<p>Válassz nyelvet<br>Choose your language</p>
+<nav class="choices">
+<a href="manual-hu.html" hreflang="hu" lang="hu">Magyar<small>Felhasználói információk</small></a>
+<a href="manual-en.html" hreflang="en" lang="en">English<small>User information</small></a>
+</nav>
+</main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elderly SOS – felhasználói információk</title>
+<meta name="description" content="Elderly SOS: háromszori bekapcsológomb-nyomással automatikus segélyhívás és SMS a pontos tartózkodási hellyel.">
+<style>
+:root{--bg:#f5f7fa;--surface:#fff;--ink:#1b2430;--muted:#4d5b6c;--line:#d9e0e8;--sos:#c8102e;--sos-soft:#fdecee;--blue:#1f3a5f;--warn-bg:#fff4dc;--warn-line:#e0a800}
+@media (prefers-color-scheme:dark){:root{--bg:#10151c;--surface:#19212b;--ink:#eef2f7;--muted:#a9b6c6;--line:#2c3846;--sos:#ff5a6e;--sos-soft:#2b1a1f;--blue:#9cc0f0;--warn-bg:#2d2512;--warn-line:#b38600}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:42rem;margin:0 auto;padding:1.25rem 1.1rem 3rem}
+.lang{text-align:right;font-size:.95rem}
+.lang a{color:var(--blue);font-weight:600;padding:.4rem .2rem;display:inline-block}
+.presses{display:flex;gap:.6rem;margin:1.2rem 0 .8rem}
+.presses span{width:2.6rem;height:2.6rem;border-radius:50%;background:var(--sos);box-shadow:0 0 0 .35rem var(--sos-soft)}
+h1{font-size:2rem;line-height:1.15;margin:0 0 .4rem;color:var(--blue)}
+.sub{color:var(--muted);margin:0 0 1.5rem;font-size:1.05rem}
+h2{font-size:1.3rem;line-height:1.25;margin:2.2rem 0 .7rem;color:var(--blue)}
+p{margin:0 0 1rem}
+ul,ol{padding-left:1.3rem;margin:0 0 1rem}
+li{margin-bottom:.5rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;margin:0 0 1rem}
+ol.steps{list-style:none;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding-left:2.8rem;margin-bottom:.9rem}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:.05rem;width:2rem;height:2rem;border-radius:50%;background:var(--sos);color:#fff;font-weight:700;display:grid;place-items:center}
+.warn{background:var(--warn-bg);border-left:5px solid var(--warn-line);border-radius:8px;padding:1rem 1.1rem;margin-top:2rem}
+.warn h2{margin-top:0}
+footer{margin-top:2.5rem;padding-top:1.2rem;border-top:1px solid var(--line);color:var(--muted);font-size:.98rem}
+a{color:var(--blue)}
+a:focus-visible{outline:3px solid var(--sos);outline-offset:2px}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="lang"><a href="manual-en.html" hreflang="en" lang="en">English</a></div>
+
+<div class="presses" aria-hidden="true"><span></span><span></span><span></span></div>
+<h1>Elderly SOS</h1>
+<p class="sub">Felhasználói információk</p>
+
+<p>Az Elderly SOS egyszerű biztonsági alkalmazás idős emberek számára, és azoknak a családtagoknak, akik aggódnak értük.</p>
+<p>Az idősebb korosztálynak gyakran nehéz a mobiltelefon használata, különösen vészhelyzetben: fel kell oldani a képernyőt, megnyitni a telefonalkalmazást, kiválasztani a megfelelő névjegyet, majd elindítani a hívást. Az alkalmazást azért készítettük, hogy ilyenkor könnyebb legyen a segítségkérés.</p>
+<p>Egy előre beállított telefonszámot hív fel a bekapcsológomb háromszori, gyors egymás utáni megnyomására. A hívás automatikusan elindul, a címzett pedig SMS-t is kap egy Google Térkép-hivatkozással, amely az aktuális tartózkodási helyet mutatja. Mindez akkor is működik, ha a telefon zárolva van, a képernyő sötét, vagy egy másik alkalmazás fut.</p>
+
+<h2>Hogyan működik</h2>
+<ol class="steps">
+<li>Add meg a hívandó számot és a telefon saját számát (ez szerepel az SMS szövegében).</li>
+<li>Nyomd meg az Indítás gombot, és engedélyezd a kért jogosultságokat.</li>
+<li>Ennyi. Mostantól háromszori gyors gombnyomásra elindul a riasztás.</li>
+</ol>
+
+<h2>Hogyan használd</h2>
+<p>Az app telepítése és egyszeri beállítása után nem igényel további kezelést a telefonon. A háttérben fut, és figyeli a ki/be kapcsoló gomb megnyomását.</p>
+<p>Háromszori gyors egymás utáni megnyomás esetén:</p>
+<ul>
+<li>felhívja az előre beállított számot (kihangosítva),</li>
+<li>SMS-t küld ugyanarra a számra a dátummal, az idővel és a telefon pontos pozíciójával, térképes hivatkozásként.</li>
+</ul>
+<p>A hívás és az SMS kikapcsolt képernyővel, zárolt telefonon és másik alkalmazás használata közben is működik. A felhasználónak mindössze háromszor, gyorsan egymás után meg kell nyomnia a ki/be kapcsoló gombot.</p>
+<p>A telefon újraindulása után (például lemerült akkumulátor feltöltése után) az app automatikusan elindul, és azonnal használható.</p>
+
+<h2>Telepítés és első indítás</h2>
+<p>A beállításokat csak egyszer, a telepítés utáni első indításkor kell elvégezni.</p>
+<ol class="steps">
+<li>Az app logóanimációval indul, majd tájékoztat arról, hogy a használathoz néhány rendszerbeállítás szükséges.</li>
+<li>Az <strong>OK</strong> gomb megnyomása után az app végigvezet a szükséges beállításokon.</li>
+<li>Ezután megjelenik a telefonszám-beállító képernyő. Itt add meg a hívandó számot: vészhelyzetben ezt hívja az app, és ide küldi az SMS-t is a tartózkodási helyről szóló Google Térkép-hivatkozással. A linkre kattintva a térképen látszik a segélykérő pontos helye.</li>
+<li>Ezután add meg a saját telefonszámodat is.</li>
+<li>Végül egy tájékoztató szöveg jelenik meg: az <strong>OK</strong> megnyomása után az ablak eltűnik a képernyőről, de az app a háttérben tovább fut, és figyeli, hogy háromszor gyorsan megnyomják-e a ki/be kapcsoló gombot. Ha ez megtörténik, az app automatikusan felhívja a megadott számot.</li>
+</ol>
+
+<h2>Ingyenes próba és Pro verzió</h2>
+<ul>
+<li>Az app ingyenesen letölthető és kipróbálható: 5 napig minden funkció korlátozás nélkül használható.</li>
+<li>A próbaidő lejárta után a segélyhívó funkció kikapcsol, amíg meg nem vásárolod a Pro verziót.</li>
+<li>Ha tovább szeretnéd használni, a Pro verziót az appon belül, egyetlen gombnyomással megvásárolhatod (<em>Upgrade to Pro</em>).</li>
+</ul>
+
+<h2>Kinek ajánljuk</h2>
+<ul>
+<li>Egyedül élő idős embereknek</li>
+<li>Mindenkinek, akinek vészhelyzetben nehéz az érintőképernyőt kezelni</li>
+<li>Családtagoknak és gondozóknak, akik beállítják a telefont</li>
+</ul>
+
+<h2>Jó tudni</h2>
+<div class="card">
+<ul>
+<li>Az SMS tartalmazza a dátumot, az időt, a telefon saját számát és egy térképes hivatkozást. Ha a pozíció nem érhető el, az SMS ettől még elmegy, erről megjegyzéssel.</li>
+<li>Az app ezeket az engedélyeket kéri: <strong>Telefon</strong> (a hívás indításához), <strong>SMS</strong> (az üzenet küldéséhez), <strong>Helyadat a háttérben is</strong> (hogy kikapcsolt képernyőnél is legyen pozíció), és kivételt az <strong>akkumulátor-optimalizálás</strong> alól (hogy a rendszer ne állítsa le).</li>
+<li>Az app és a felülete magyarul és angolul érhető el, a telefon nyelvétől függően.</li>
+<li>Nincs hirdetés, fiók vagy regisztráció.</li>
+</ul>
+</div>
+
+<section class="warn" aria-labelledby="fontos">
+<h2 id="fontos">Fontos</h2>
+<p>Az Elderly SOS nem helyettesíti a hivatalos segélyszolgálatokat, és nem hívja magától a 112-t: az előre beállított számot hívja.</p>
+<p>A hívást és az SMS-t a mobilszolgáltató számlázza. A riasztás működése függ a térerőtől, az akkumulátortól, a telefon beállításaitól és a gyártó akkumulátorkezelésétől is.</p>
+<p><strong>Beállítás után mindenképp próbáld ki, és telefonfrissítések után is ellenőrizd újra.</strong></p>
+</section>
+
+<footer>
+<p>Kapcsolat: <a href="mailto:contact@papasoft.hu">contact@papasoft.hu</a><br>
+Web: <a href="https://papasoft.hu">papaSOFT.hu</a></p>
+</footer>
+</main>
+</body>
+</html>
